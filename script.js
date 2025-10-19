@@ -22,7 +22,7 @@ const defaultSegments = [
   { label: "深邃的氜氜",  color: "#0ea5e9", weight: 1 },
   { label: "樊胜美",  color: "#f59e0b", weight: 1 },
   { label: "暮斟酒酒", color: "#475569", weight: 1 },
-  { label: "Deep dark leaves ears👂 之求等价替换", color: "#a78bfa", weight: 1 },
+  { label: "Deep dark leaves ears👂", color: "#a78bfa", weight: 1 },
   { label: "饭［江国公］",  color: "#14b8a6", weight: 1 },
   { label: "木鱼",  color: "#f43f5e", weight: 1 },
   { label: "曲千千", color: "#334155", weight: 1 },
