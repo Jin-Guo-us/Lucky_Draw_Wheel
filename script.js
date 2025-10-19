@@ -28,6 +28,10 @@ const defaultSegments = [
   { label: "曲千千", color: "#334155", weight: 1 },
   { label: "黎半夏",  color: "#10b981", weight: 1 },
   { label: "唐染苒",  color: "#0ea5e9", weight: 1 },
+  { label: "好孤独啊～",  color: "#f59e0b", weight: 1 },
+  { label: "我智力有问题", color: "#475569", weight: 1 },
+  { label: "姜辰巳", color: "#a78bfa", weight: 1 },
+  { label: "顾小嫚",  color: "#14b8a6", weight: 1 },
 ];
 
 const wheel = document.getElementById('wheel');
