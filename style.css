@@ -50,3 +50,4 @@ textarea{width:100%; min-height:160px; background:#0b1220; color:var(--text); bo
 .footnote{margin-top:10px; color:var(--muted); font-size:12px}
 
 #confetti{position:fixed; inset:0; pointer-events:none}
+body.spinning { overflow: hidden; }
