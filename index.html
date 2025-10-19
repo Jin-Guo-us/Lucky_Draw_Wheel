@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>抽奖转盘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="board">
+      <div class="wheel-wrap">
+        <div class="wheel-shadow" aria-hidden="true"></div>
+        <div class="pointer" aria-hidden="true"></div>
+        <canvas id="wheel" width="700" height="700" aria-label="抽奖转盘"></canvas>
+        <div class="hub">GO</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>抽奖转盘 · 配置与控制</h2>
+      <p class="muted">可直接点击“开始抽奖”。也可在下方编辑奖项（支持权重）后点击“应用配置”。</p>
+      <div class="controls">
+        <button id="spinBtn" class="btn">开始抽奖</button>
+        <button id="resetBtn" class="btn secondary">重置转盘角度</button>
+
+        <label class="muted">奖项配置（JSON 数组，支持 <code>label</code>、<code>color</code>、<code>weight</code>）：</label>
+        <textarea id="config"></textarea>
+        <button id="applyBtn" class="btn secondary">应用配置</button>
+
+        <div id="result" class="result"></div>
+        <div class="footnote">⚖️ 随机逻辑先抽签再转动（支持权重），避免因动画时机造成偏差。</div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
