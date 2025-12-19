@@ -51,4 +51,26 @@ textarea{width:100%; min-height:160px; background:#0b1220; color:var(--text); bo
 .footnote{margin-top:10px; color:var(--muted); font-size:12px}
 
 #confetti{position:fixed; inset:0; pointer-events:none}
+
 body.spinning { overflow: hidden; }
+
+/* 手机端优化：不要垂直居中，避免内容被裁切 */
+@media (max-width: 980px) {
+  body{
+    align-items: flex-start;   /* 关键：从顶部开始排版 */
+    padding: 12px;            /* 缩小边距 */
+  }
+  .app{
+    width: 100%;
+  }
+  .board{
+    width: 100%;
+    padding: 14px;            /* 缩小转盘外边框内边距 */
+  }
+  canvas#wheel{
+    width: min(92vw, 520px);  /* 用 vw 更稳定，避免 vmin 在手机上波动 */
+    height: min(92vw, 520px);
+    max-width: 520px;
+    max-height: 520px;
+  }
+}
